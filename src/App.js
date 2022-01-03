@@ -1,5 +1,10 @@
 import {
+	Button,
+	ButtonGroup,
 	Container,
+	Form,
+	FormGroup,
+	FormInput,
 	Grid,
 	GridColumn,
 	GridRow,
@@ -93,6 +98,30 @@ function App() {
 					</GridRow>
 				</Grid>
 			</Segment>
+
+			<Header as='h3'>Add New Transaction</Header>
+			<Form unstackable>
+				<FormGroup>
+					<FormInput
+						icon='tags'
+						width={12}
+						label='Description'
+						placeholder='New shinning thing'
+					/>
+					<FormInput
+						label='Value'
+						width={4}
+						placeholder='100'
+						icon='dollar'
+						iconPosition='left'
+					/>
+				</FormGroup>
+				<ButtonGroup>
+					<Button>Cancel</Button>
+					<Button.Or />
+					<Button primary>Ok</Button>
+				</ButtonGroup>
+			</Form>
 		</Container>
 	);
 }
