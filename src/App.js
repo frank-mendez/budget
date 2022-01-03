@@ -13,11 +13,12 @@ import {
 	Segment,
 	Statistic,
 } from 'semantic-ui-react';
+import MainHeader from './components/MainHeader';
 
 function App() {
 	return (
 		<Container>
-			<Header as='h1'>Budget</Header>
+			<MainHeader title='Budget' />
 
 			<Statistic size='small'>
 				<Statistic.Label>Your Balance:</Statistic.Label>
@@ -99,7 +100,7 @@ function App() {
 				</Grid>
 			</Segment>
 
-			<Header as='h3'>Add New Transaction</Header>
+			<MainHeader type='h3' title='Add New Transaction' />
 			<Form unstackable>
 				<FormGroup>
 					<FormInput
