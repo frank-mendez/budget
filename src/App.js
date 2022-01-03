@@ -48,9 +48,45 @@ function App() {
 			<Segment color='red'>
 				<Grid columns={3} textAlign='right'>
 					<GridRow>
-						<GridColumn width={}>Something</GridColumn>
-						<GridColumn>$10.00</GridColumn>
-						<GridColumn>
+						<GridColumn width={10} textAlign='left'>
+							Something
+						</GridColumn>
+						<GridColumn width={3} textAlign='right'>
+							$10.00
+						</GridColumn>
+						<GridColumn width={3}>
+							<Icon name='edit' bordered />
+							<Icon name='trash' bordered />
+						</GridColumn>
+					</GridRow>
+				</Grid>
+			</Segment>
+			<Segment color='green'>
+				<Grid columns={3} textAlign='right'>
+					<GridRow>
+						<GridColumn width={10} textAlign='left'>
+							Something
+						</GridColumn>
+						<GridColumn width={3} textAlign='right'>
+							$100.00
+						</GridColumn>
+						<GridColumn width={3}>
+							<Icon name='edit' bordered />
+							<Icon name='trash' bordered />
+						</GridColumn>
+					</GridRow>
+				</Grid>
+			</Segment>
+			<Segment color='red'>
+				<Grid columns={3} textAlign='right'>
+					<GridRow>
+						<GridColumn width={10} textAlign='left'>
+							Something
+						</GridColumn>
+						<GridColumn width={3} textAlign='right'>
+							$10.00
+						</GridColumn>
+						<GridColumn width={3}>
 							<Icon name='edit' bordered />
 							<Icon name='trash' bordered />
 						</GridColumn>
