@@ -13,6 +13,7 @@ import {
 	Segment,
 	Statistic,
 } from 'semantic-ui-react';
+import ButtonSaveOrCancel from './components/ButtonSaveOrCancel';
 import MainHeader from './components/MainHeader';
 
 function App() {
@@ -117,11 +118,7 @@ function App() {
 						iconPosition='left'
 					/>
 				</FormGroup>
-				<ButtonGroup>
-					<Button>Cancel</Button>
-					<Button.Or />
-					<Button primary>Ok</Button>
-				</ButtonGroup>
+				<ButtonSaveOrCancel />
 			</Form>
 		</Container>
 	);
