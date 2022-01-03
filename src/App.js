@@ -1,13 +1,24 @@
-import { Container, Grid, Header, Segment, Statistic } from 'semantic-ui-react';
+import {
+	Container,
+	Grid,
+	GridColumn,
+	GridRow,
+	Header,
+	Icon,
+	Segment,
+	Statistic,
+} from 'semantic-ui-react';
 
 function App() {
 	return (
 		<Container>
 			<Header as='h1'>Budget</Header>
+
 			<Statistic size='small'>
 				<Statistic.Label>Your Balance:</Statistic.Label>
 				<Statistic.Value>2500.53</Statistic.Value>
 			</Statistic>
+
 			<Segment textAlign='center'>
 				<Grid columns={2} divided>
 					<Grid.Row>
@@ -15,7 +26,7 @@ function App() {
 							<Statistic size='tiny' color='green'>
 								<Statistic.Label sytle={{ textAlign: 'left' }}>
 									{' '}
-									Incoming:
+									Income:
 								</Statistic.Label>
 								<Statistic.Value>1034.50</Statistic.Value>
 							</Statistic>
@@ -30,6 +41,20 @@ function App() {
 							</Statistic>
 						</Grid.Column>
 					</Grid.Row>
+				</Grid>
+			</Segment>
+
+			<Header as='h3'>History</Header>
+			<Segment color='red'>
+				<Grid columns={3} textAlign='right'>
+					<GridRow>
+						<GridColumn width={}>Something</GridColumn>
+						<GridColumn>$10.00</GridColumn>
+						<GridColumn>
+							<Icon name='edit' bordered />
+							<Icon name='trash' bordered />
+						</GridColumn>
+					</GridRow>
 				</Grid>
 			</Segment>
 		</Container>
